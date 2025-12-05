@@ -1,7 +1,7 @@
 # YouTube Agent Configuration
 
 # 🚀 GEMINI API - Main AI Engine
-GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY_HERE'  # Get from https://aistudio.google.com/app/apikey
+GEMINI_API_KEY = 'AIzaSyDf734NkK532Dvy9x1XCS2J95dOzvZsjXk'  # Get from https://aistudio.google.com/app/apikey
 
 # 📱 TikTok API (Optional - get from https://developers.tiktok.com/)
 TIKTOK_ACCESS_TOKEN = 'YOUR_TIKTOK_ACCESS_TOKEN'  # Free developer account
