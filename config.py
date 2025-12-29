@@ -1,18 +1,23 @@
 # YouTube Agent Configuration
+import os
+from dotenv import load_dotenv
 
-# 🚀 GEMINI API - Main AI Engine
-GEMINI_API_KEY = ''YOUR_GEMINI_API_KEY'  # Get from https://aistudio.google.com/app/apikey
+# Load environment variables from .env file
+load_dotenv()
+
+# 🔴 GEMINI API - Main AI Engine
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')  # Get from https://aistudio.google.com/app/apikey
 
 # 📱 TikTok API (Optional - get from https://developers.tiktok.com/)
-TIKTOK_ACCESS_TOKEN = 'YOUR_TIKTOK_ACCESS_TOKEN'  # Free developer account
+TIKTOK_ACCESS_TOKEN = os.getenv('TIKTOK_ACCESS_TOKEN', '')  # Free developer account
 
-# 🎥 Pexels API for free stock footage
-PEXELS_API_KEY = 'YOUR_PEXELS_API_KEY'  # Get from https://www.pexels.com/api/
+# 📸 Pexels API for free stock footage
+PEXELS_API_KEY = os.getenv('PEXELS_API_KEY', '')  # Get from https://www.pexels.com/api/
 
 # API Settings
-YOUTUBE_API_KEY = 'YOUR_API_KEY_HERE'
-YOUTUBE_CLIENT_ID = 'YOUR_CLIENT_ID'  # From Google Cloud Console
-YOUTUBE_CLIENT_SECRET = 'YOUR_CLIENT_SECRET'  # From Google Cloud Console
+YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY', '')
+YOUTUBE_CLIENT_ID = os.getenv('YOUTUBE_CLIENT_ID', '')  # From Google Cloud Console
+YOUTUBE_CLIENT_SECRET = os.getenv('YOUTUBE_CLIENT_SECRET', '')  # From Google Cloud Console
 CLIENT_SECRET_FILE = 'client_secret.json'
 
 # Upload Schedule
